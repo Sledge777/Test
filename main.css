@@ -4,8 +4,8 @@ body {
 }
 html {
     scroll-behavior: smooth;
-  }
-.wrapper {
+}
+.first {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 26%, rgba(26,26,180,1) 60%);
     height: 100vh;
@@ -14,7 +14,16 @@ html {
 .header {
     width: 100%;
     text-align: center;
-    padding-top:20px ;
+   
+    position: fixed;
+}
+.border {
+    background: rgb(153, 255, 255, 0.5);
+    border-radius: 50px;
+    border: solid 5px rgb(153, 255, 255, 0.5);
+    padding: 20px;
+    width: 70%;
+    margin: auto;
 }
 .link { 
     text-decoration: none;
@@ -35,7 +44,7 @@ html {
 .main {
     width: 75%;
     margin: auto;
-    margin-top: 70px;
+    padding-top:10%  ;
     display:flex;
 }
 .img {
@@ -51,7 +60,7 @@ html {
     font-size: 16px;
 
 }
-.border {
+.line {
     width:0;
     padding: 0px 20px 0px 0px;  
 }
@@ -61,6 +70,49 @@ html {
     margin: auto;
 }
 .text {
-    font-size: 24px;
+    font-size: 29px;
     color: #5fcaed;
+    margin:0;
+    padding: 0;
+}
+.second {
+    background-image: url('img/skills.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.skills {
+    padding-top:10% ;
+    width: 70%;
+    margin: auto;
+}
+.h {
+    display:flex;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+.menu {
+    background-color: black;
+    height: 5px;
+    width: 30px;
+    margin-top: 5px;
+    position: relative;
+}
+.p:hover>:not(li) {
+    transition: 0.3s;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.list:hover .sub_list{
+    display: block;
+}
+.sub_list {
+    list-style-type: none;
+    position: absolute;
+    display: none;
+
 }
