@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Mooli&family=Tillana:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Mooli&family=Oswald&family=Tillana:wght@500;600&display=swap');
 body {
     margin:0;
     padding:0;
@@ -31,6 +33,7 @@ html {
     font-size: 30px;
     padding:0 50px 0 50px;
     transition: 0.3s;
+    font-family: 'Oswald', sans-serif;
 }
 .link:hover {
     color:#6d8ee3;
@@ -58,7 +61,7 @@ html {
     word-break: break-all;
     font-weight: 900;
     font-size: 16px;
-
+    
 }
 .line {
     width:0;
@@ -74,11 +77,10 @@ html {
     color: #5fcaed;
     margin:0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 .second {
-    background-image: url('img/skills.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #90c6f5;
     width: 100%;
     height: 100vh;
 }
@@ -87,32 +89,84 @@ html {
     width: 70%;
     margin: auto;
 }
-.h {
+.flex {
     display:flex;
+    margin-top: 100px;
 }
 .list {
     margin: 0;
-    padding: 0;
+    padding: 0px 5px 5px 5px;
     transition: 0.3s;
+    height: 100%;
+    background-color: antiquewhite;
+    border-radius: 5px;
 }
 .menu {
     background-color: black;
     height: 5px;
     width: 30px;
     margin-top: 5px;
-    position: relative;
 }
-.p:hover>:not(li) {
-    transition: 0.3s;
-    transform: rotate(90deg);
+.list:hover {
     cursor: pointer;
-}
-.list:hover .sub_list{
-    display: block;
 }
 .sub_list {
     list-style-type: none;
+    margin: 0;
+    margin-left:30px;
+    margin-top: 30px;
+    padding-left: 0;
+    transition: 0.3s;
+    opacity: 0;
+    background-color: #fff;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
     position: absolute;
-    display: none;
-
+    
+}
+.sub_list li {
+    padding: 5px 0px;
+}
+.active {
+    opacity:1;
+    transition: 0.3s;
+} 
+.active_menu    {
+    transition: 0.3s;
+    transform: rotate(90deg);
+    cursor: pointer;
+    background-color: bisque;
+}
+.logo {
+    height: 20px;
+    padding-left: 5px;
+}
+.h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+}
+.text2 {
+    font-size: 40px;
+    color: #055a6b;
+    margin: 0;
+}
+span.size-48 {
+    font-size: 48px;
+    font-variation-settings: 'OPSZ' 48;
+    height: 100%;
+    padding-left: 50px;
+}
+.line2 {
+    border: grey 0.5px solid;
+    width: 90%;
+    margin: auto;
+}
+.border_line {
+    border: grey 2px solid;
+    color:grey;
+    background-color: grey;
+    font-size: 15px;
+    text-align: center;
 }

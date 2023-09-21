@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz@48" rel="stylesheet" />
 </head>
 <body>
     <div class="wrapper">
@@ -32,29 +33,49 @@
                 </div>
             </div>
         </div>
+        <div class="border_line">Выделение убери ара</div>
         <div class="second">
             <div class="skills">
-                <div class="h">
-                    <div class="p">
-                        <ul class="list">
-                            <div class="menu"></div>
-                            <div class="menu"></div>
-                            <div class="menu"></div>
-                            <ul class="sub_list">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    
-                    <p class="text">Нажав на это меню вы можете увидеть список моих постоянно пополняющихся <b>Hard Skills</b></p>
+                <div class="h1">Hard skills and Soft skills</div>
+                <div class="flex">
+                    <ul class="list" id="menu" onclick="OpenMenu()">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </ul>
+                    <ul class="sub_list" id="sub_list">
+                        <li>HTML <img class="logo" src="img/html.png" alt="html"></li>
+                        <div class="line2"></div>
+                        <li>CSS <img class="logo" src="img/css.png" alt="css"></li>
+                        <div class="line2"></div>
+                        <li>JavaScript<img class="logo" src="img/js.png" alt="javascript"></li>
+                        <div class="line2"></div>
+                        <li>Python<img class="logo" src="img/python.png" alt="python"></li>
+                    </ul>
+                    <span class="material-symbols-outlined size-48">arrow_left_alt</span>     
+                    <p class="text2">Нажав на это меню вы можете увидеть список моих постоянно пополняющихся <b>Hard Skills</b></p>
                 </div> 
-                
-                      
+                <div class="flex">
+                    <ul class="list" id="menu2" onclick="OpenMenu2()">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </ul>
+                    <ul class="sub_list" id="sub_list2">
+                        <li>Коммуникабельность</li>
+                        <div class="line2"></div>
+                        <li>Настойчивость</li>
+                        <div class="line2"></div>
+                        <li>Ориентация на результат</li>
+                        <div class="line2"></div>
+                        <li>хорошая обучаемость</li>
+                    </ul>
+                    <span class="material-symbols-outlined size-48">arrow_left_alt</span>     
+                    <p class="text2" id="b">А если вы нажмете сюда то появится список моих<b>Soft Skills</b></p>
+                </div>         
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
