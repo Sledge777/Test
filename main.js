@@ -6,3 +6,6 @@ function OpenMenu2() {
     document.getElementById("sub_list2").classList.toggle('active');
     document.getElementById("menu2").classList.toggle('active_menu');
 }
+function contact() {
+    document.getElementById("contacts").classList.toggle('on');
+}
